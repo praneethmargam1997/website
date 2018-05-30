@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>dropdown</title>
+</head>
+<body>
+<div class="dropdown">
+	<button class="dropbtn">dropdown</button>
+	<div class="dropdown-content">
+		<a href="#">home</a>
+			<a href="#">home</a>
+				<a href="#">home</a>
+	</div></div>
+<div class="pic">
+	<img src="bg.jpg" width="100px" height="100px" alt="backgrpound image">
+	<div class="pic-content">
+		<img src="bg.jpg">
+	</div>
+</div>
+<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </li>
+</ul>
+<div >
+	<img src="home.png" width="20px" height="auto">
+</div>
+
+</body>
+<style type="text/css">
+.pic{
+	position: relative;
+	display: inline-block;
+}
+.pic-content{
+	display: none;background-color: #0008;
+	position: absolute;
+}
+.pic:hover .pic-content{
+	display: block;
+}
+	.dropbtn{
+		background-color: green;
+		color: #fff;
+		padding :16px;
+		border: none;
+		cursor: pointer;
+		text-transform: uppercase;
+	}
+.dropdown{
+	position: relative;
+	display: inline-block;
+}
+	.dropdown-content{
+		display: none;
+		position: absolute;
+		background-color: #0009;
+	}
+	.dropdown-content a{
+		color: white;
+		padding: 16px;
+		text-decoration: none;
+		display: block;
+	}
+.dropdown-content a:hover{
+	background-color: red;
+}
+.dropdown:hover .dropdown-content{
+	display: block;
+}
+.dropdown:hover .dropbtn{
+	background-color: pink;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:#0006 ;
+}
+
+li {
+    float: right;
+}
+
+li a,.dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover,.dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+</style>
+</html>
