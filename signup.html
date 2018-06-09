@@ -1,149 +1,137 @@
-<!DOCTYPE html>
 <html>
-<head>
-	<title>login</title>
-</head>
-<body>
-	<a href="signin.html">signin</a>
-	<img src="icon.png" width="100px">
-<div style="width: 600px;height: 470px;border:1px solid black; border-radius: 5px;margin-top: 0px;margin-left: 400px; border:none;position:relative;">
-	<form>
-		<label for="username">name</label>
-		<input type="text" name="usernam" placeholder=" your name" required="required">
-		<label for="email">email:</label>
-		<input type="email" name="email" placeholder="email" required="required">
-		<label for="username">password:</label>
-		<input type="password" name="password" placeholder="your password" required="required">
-		<label for="date">dateofbirth</label>
-		<input type="date" name="date" required="required">
-		<label for="number">phone number</label>
-		<input type="tel" name="ph number" placeholder="phone number" maxlength="10" required="required" ;>
-		<input type="submit" name="submit" value="signup" required="required">
-	</form>
-<div>
-</body>
-<style type="text/css">
-	input[type=text]{
-		width: 100%;
-		margin: 8px 0;
-		padding: 15px;
-		border-radius:5px;
-		box-sizing: border-box;
-		border :none;
-	}
-	body{
-		background-image: url(login2.jpg);
-		background-repeat: no-repeat;
-		background-position: center;
-	background-size: cover;
-	}
-	input[type=password]{
-		width: 100%;
-		margin: 8px 0;
-		padding: 15px;
-		border-radius:5px;
-		box-sizing: border-box; 
-	border:none;
-	}
-	input[type=date]{
-		width: 100%;
-		margin: 8px 0;
-		padding: 15px;
-		border-radius:5px;
-		box-sizing: border-box; 
-	border:none;
-	}
-	img:hover{
-		background-color:#0009;
-	}
-	input[type=tel]{
-		width: 100%;
-		margin: 8px 0;
-		padding: 16px;
-		border-radius:5px;
-		box-sizing: border-box;
-		border :none;
-	}
-	input[type=email]{
-		width: 100%;
-		margin: 8px 0;
-		padding: 16px;
-		border-radius:5px;
-		box-sizing: border-box;
-		border :none;
-	}
-	 form label{
-		font-family: arial;
-		text-transform: uppercase;
-         font-weight: bolder;
- font-size: 20px;
-         color:#000;
-	}
-	
-	input[type=password]:focus{
-background-color:#b8c2ea;
-font-size: 20px;
-	}
-	input[type=text]:focus{
-background-color:#b8c2ea;
-font-size: 20px;
-	}
-	input[type=date]:focus{
-background-color:#b8c2ea;
-font-size: 20px;
-	}
-	input[type=number]:focus{
-background-color:#b8c2ea;
-font-size: 20px;
-	}
-	input[type=email]:focus{
-		background-color: #b8c2ea;
-		font-size: 20px;
-	}
-	input[type=submit]{
-		float: right;
-		padding:12px;
-		display: block;
-		margin-right: 15px;
-		font-family: sans-serif;
-		font-size: 20px;
-		background-color:red;
-		overflow: hidden;
-		cursor: pointer;
-		border:none;
-		border-radius: 7px;
-		margin-top: 10px;
-		text-transform: uppercase;
-	}
-	input[type=submit]:focus{
-		background-color:green;
-	}
-	input[type=submit]:hover{
-		font-size: 23px;
-	}
-	img{
-	left: 50%;
-	margin-top: 30px;
-	margin-left: 650px;
-	background-color: green;
-	}
-	a{
-		float: right;
-		margin-bottom: 50px;
-		text-decoration: none;
-		font-family: corbel;
-		color:black;
-		display: black
-		font-weight:bolder;
-        background-color: red;
-		padding: 10px;
-		text-transform: uppercase;
-		border-radius: 5px;
-		font-size: 20px;
-	}
-	a:hover{
-		background-color:green;
-		font-size: 23px;
-	}
-</style>
-</html>
+    <head>
+        <title>signup</title>
+    </head>
+    <body style="background-image: url(signup.jpg);background-position: center;background-size: cover;">
+    <div style="width:500px;height:550px;float:right;margin-top: 60px;border-radius: 10px;background-color:#fff;margin-right:50px; background-color: darkslategrey; ">
+     <div style="width:80%;height:70%;border:1px solid black;float:unset 
+    ;margin:0 auto;margin-top:70px;background-color:darkslategrey;border:none;background: transparent;opacity: 0.9;">
+    <form>
+    <input type="text" placeholder="FIRSTNAME" name="text" required="required">
+    <input type="TEXT" placeholder="LASTNAME" name="tesxt" required="required">
+    <input type="email" placeholder="Email" name="email" required="required"><br>
+    <input type="password" placeholder="Password" name="password" required="required"><br>
+    <input type="tel" placeholder="Phone-Number" name="tel" maxlength="10" required="required"><br>
+    <select required="required">
+        <option ng-checked="ng-checked">India</option>
+        <option>Europe</option>
+        <option>America</option>
+        <option>United Kingdom</option>
+        <option>Chaina</option>
+        <option>Russia</option>
+    </select>
+   <input type="checkbox"><span id="terms">By creating the account,You agree to <span id=span>Terms & conditions</span></span>
+    <a href="#"><p>Create account</p></a>
+    </form>
+    </div>
+    </div>
+    </body>
+    <style>
+        #terms{
+            font-family: corbel;
+            color: #fff;
+        }
+        input[type=checkbox]{
+            margin-top: 20px;
+        }
+        #span{
+            color: red;
+            border-bottom:2px solid black;
+        }
+    input[type=text]{
+        width: auto;
+        height: auto;
+        box-sizing: border-box;
+        box-shadow: 0 0 7 10 black;
+        padding: 10px;
+        border:1px solid #0007;
+        margin-top:10px; 
+        margin-left:5px;
+        border:none;
+        outline: none;
+        border-radius: 20px;
+    }
+    input[type=email]{
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+        box-shadow: 0 0 18 12 black;
+        padding: 10px;
+        border:1px solid #0007;
+        border-radius:20px;
+        padding-right:5px;
+        margin-top:15px; 
+        margin-right:5px;
+        border:none;
+        outline: none;
+    }
+    input[type=password]{
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+        box-shadow: 0 0 18 12 black;
+        padding: 10px;
+        border:1px solid #0007;
+        border-radius:20px;
+        padding-right:5px;
+        margin-top:15px; 
+        margin-right:5px;
+        border:none;
+        outline: none;
+    }
+    input[type=tel]{
+        outline: none;
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+        box-shadow: 0 0 18 12 black;
+        padding: 10px;
+        border:1px solid #0007;
+        border-radius:20px;
+        padding-right:5px;
+        margin-top:15px; 
+        margin-right:5px;
+        border:none;
+    }
+    select{
+        width:100%;
+        height: auto;
+        box-sizing: border-box;
+        box-shadow: 0 0 18 12 black;
+        padding: 10px;
+        outline: none;
+        border:1px solid #0007;
+        border-radius:20px;
+        padding-right:5px;
+        margin-top:15px; 
+        margin-right:5px;
+        border:none;
+    }
+    option{
+        border:none;
+        overflow: hidden;
+        outline: none;
+        font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    p{
+        margin-top: 40px;
+        display:block;
+        width: 100%;
+        height:40px;
+        box-sizing: border-box;
+        background-color: green;
+        text-align: center;
+        padding: 10px;
+        text-transform: uppercase;
+        font-family: corbel;
+        font-size: 20px;
+        font-weight: bold;
+        border-radius: 10px;
+        text-decoration:none;
+       color:#000;
+    }
+    a,p{
+        text-decoration:none
+    }
+    </style>
+    </html>
