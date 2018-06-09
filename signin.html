@@ -1,112 +1,116 @@
-<!DOCTYPE html>
 <html>
-<head>
-	 <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-<body>
-	<div style="background-image: url(sing.png); width:73%;height:700px;background-repeat: no-repeat;background-size:cover; opacity:;position: absolute;"></div>
-	<a href="signup.html" id="signup" target="black">signup</a>
-	<div class="signin">
-		<fieldset>
-			<legend><img src="icon2.png" width="30px; float:center;"></legend>
-			<label for="email">email</label>
-			<input type="email" name="email" placeholder="username" required="required"><br>
-			<label for="password">password</label>
-			<input type="password" name="passsword" placeholder="passsword" required="required">
-				<input type="button" name="button" value="signin">
-				<p><a href="#">Forget password</a></p>
-		</fieldset>
-	</div>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<head><title>signin</title></head>
+<body style="background-image: url(signin.jpg);background-size:background-position:"center">
+   <a href="signup.html" target="blank"><input type="submit" value="sign up"></a>
+    <div style="width:35%;height: 500px;border:1px outset black;margin-left:700px;margin-top:60;box-shadow: 0,0,20,18x,black;border-radius: 15px;background-color:ghostwhite">
+        <section>
+            <img src="icon.png" width="80px;" height="auto"; style="background-color: #0004;color: red;margin-left: 200px;margin-top: 20px;">
+        </section>
+        <div style="width:80%;height: 200px; border: px solid rebeccapurple;margin-top: 100px;margin-left:45px;">
+   <label for="email">email</label>
+   <br>
+   <input type="email" placeholder="your email" required="required" name="email"><br>
+   <label for="password">password</label>
+   <br>
+   <input type="password" placeholder="your password" required="required" name="password"><br>
+   <input type="checkbox" value="remember me"><span id="span">remember me</span> 
+<input type="button" name="submit" value="sign in" style="float: right;">
+<p><a href="#" style="text-decoration: none;color: black"> Forget password</a></p>
+</div>    
+</div>
 </body>
-<style type="text/css">
-	*{
-		margin: 0px;
-		box-sizing: border-box;
-	}
-	#signup{
-		float: right;
-		margin-top:5px;
-		padding: 10px;
-		border-radius: 4px;
-		text-align: center;
-		text-decoration: none;
-		text-transform: uppercase;
-		display: block;
-		border:1px solid;
-		margin-right: 20px;
-		background-color:#f50611;
-		color: #fff;
-		font-family: corbel;
-		font-weight: bold;
-	}
-	#signup:hover{
-		background-color: green;
-	}
-	.signin{
-		margin-top: 100px;
-		float: right;
-		margin-right: 50px;
-		width: 150px;
-		height: 250px;
-	}
-	fieldset{
-		border-radius: 5px;
-		border:2px solid black;
-		height: 300px;
-	}
-	input[type=email]{
-		border:none;
-		margin: 10px 0;
-		padding: 13px;
-		border-radius: 5px;
-		width: auto;
-		border:2px solid #40e2c9;
-	}
-	p a{
-		text-decoration: none;
-		font-family: corbel;
-		font-weight: bold;
-	border-bottom: 1px solid;
-	}
-	p{
-		margin-top: 60px;
-	}
-	input[type=password]
-	{
-		border:none;
-		margin: 8px 0;
-		padding: 13px;
-		border-radius: 5px;
-		width: auto;
-		border:2px solid #40e2c9;
-	}
-	input[type=button]{
-		padding: 10px;
-		text-align: center;
-		text-transform: uppercase;
-		border-radius:4px;
-		border-style: none;
-		border:none;
-		margin-top: 10px;
-		float: right;
-		background-color:#08f7d8;
-	}
-	input[type=button]:focus{
-		background-color: green;
-	}
-	label{
-		font-family: corbel;
-		text-transform: uppercase;
-		font-style: normal;
-color: #000;
+<style>
+    label{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+text-transform: uppercase;
+font-size: 13px;
 font-weight: bold;
-	}
-	input[type=email]:focus,input[type=password]:focus{
-		background-color: #c7e4e0;
-	}
+    }
+    input[type=submit]{
+        width: 80px;
+        display: inline block;
+        box-sizing: content-box;
+        padding: 10px;
+        background-color:Red;
+        font-family:corbel;
+        font-weight: bold;
+        text-align:center;
+        text-transform: uppercase;
+        outline: none;
+    
+    border:none;}
+     input[type=submit]:active{
+        background-color: green;
+     }
+    input[type=email]
+    {
+        width: 100%;
+        box-sizing: border-box;
+        height: auto;
+        padding:15px;
+        margin-bottom: 8px;
+        border: none;
+        border-bottom-color: #0006;
+        border: none;
+        box-shadow: 0px 0px 19px 20px,black;outline: none;
 
+    }
+    input[type=email]:hover{
+border-bottom: 2px solid #0007;
+    }
+    input[type=password]
+    {
+        width: 100%;
+        box-sizing: border-box;
+        height: auto;
+        padding: 15px;
+        margin-bottom: 10px;
+        border: none;
+        outline: none;
+   }
+   input[type=checkbox]
+    {
+        width:auto;
+        height: auto;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: none;
+   }
+   input[type=password]:hover{
+border-bottom: 2px solid #0007;
+    }
+    #span{
+        font-family:corbel;
+        text-transform: uppercase;
+        font-weight: inherit;
+    }
+    input[type=button]{
+        margin-top: 100px;
+        box-sizing: border-box;
+        display: block;
+        padding: 10px;
+width: 90px;
+border:1px solid red;
+        text-align: center;
+        box-sizing: 20px,10px,0px,12px,black;
+        background-color: red;
+        font-family: corbel;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 15px;
+        outline: none;
+    }
+    input[type=button]:hover{
+        background-color: green;
+        border:1px solid green;
+    }
+    p{
+        margin-top: 80px;
+        border-bottom: 1px solid #0007;
+        width: 115px;
+        font-family: corbel;
+    }
 </style>
 </html>
